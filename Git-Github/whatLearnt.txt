@@ -1,0 +1,101 @@
+What is Git and what is GitHub?
+
+Imagine that u have an application or project folder and u want to collaborate it with people, or imagine that u have your application and u now uploaded some new code in your application (u added aew feature for example) and now your application breaks.
+
+=> So what Git does is (why we use it?)
+- it allows us to maintain the history of proect at a particular point of time, 
+- which person made which changes, 
+- and where in the project.
+
+=> GitHub is a platform that allows us to host our Git repositories.
+
+=> Repositories are folders where changes are saved.
+
+
+HOW WE DO IT?
+
+1. Terminal = it allows us to manipulate the file structure using commands.
+
+2. All these histories are stored in some another folder that Git provides us and is named as .git. This folder is hidden. How do we get the folder??
+Write git init -> which initializes an empty git folder
+
+##################################
+
+Visual Understanding
+Working Directory
+       ↓
+git add .
+       ↓
+Staging Area
+       ↓
+git commit
+       ↓
+Local Git History
+       ↓
+git push
+       ↓
+GitHub Repository
+
+1. ls => list all the things that are in my current folder.
+
+2. mkdir new_directory_name=> creates new directory / project / folder
+
+3. cd change_directory_name => Change Directory that u want to go into or work into
+
+4. git init => initializes an empty git folder.
+
+5. ls -a => lists all the files including hidden files
+
+6. ls .git => lists all files and folders inside git folder
+
+7. touch file_name.extension => creates a file with specified extension and name.
+This creation history is not maintained anywhere in the software. Then how do we know that a change is made by me. In short, how do we know what changes are being made in a project that are currently not saved yet? A command is there [8.]
+
+8. git status => this says there is some file which is added by somebody and it is UNTRACKED. These tell that these changes are not known to anybody working in the project.
+
+We actaually want to maintain changes in our project that means people should know that tanyajain created a change in project.
+
+ANALOGY: Imagine u r at a wedding, so when u go on stage to bless the couple, photographer takes a picture of u with the couple. Ur photograph is now being saved in the camera roll. This is exactly the working of git.
+
+git status is actaually the people who come to wedding but haven't done with their photograps clicked. It's like they haven't marked their attendance to the couple yet.
+Now next step is to get their attendance done, that means saving them to history.
+
+9. git add . => Puts all the files in the staging area
+Here if u want to put specific files in staging area, instead of . insert file_name that u want to add.
+
+This means now these people are on the stage ready to get their photographs clicked.
+
+Basically, staging area prepares this file for the next snapshot
+
+10. git commit -m "Message"
+Here -m means provide a message. and git commit is main command to create a snapshot
+This tells git to create a permanent checkpoint of staged files.
+Git then:
+- stores file versions
+- creates a unique commit ID
+- saves author name/email
+- saves timestamp
+- saves commit message
+
+but major thing is commit != uploading to github
+git commit basically saves locally to ur computer.
+
+11. vi => is a terminal-based text editor used in Linux/Unix systems.
+| Action              | Keys  |
+| ------------------- | ----- |
+| Enter typing mode   | `i`   |
+| Exit typing mode    | `ESC` |
+| Save + quit         | `:wq` |
+| Quit without saving | `:q!` |
+
+12. cat file.text => displays what is there in file content
+
+13. git restore --staged file.txt => 
+Suppose you did: git add file.txt
+Now file.txt is staged and ready for commit.
+But then you realize, "Oops, I don't want this file in the commit yet."
+So you run [13.] command.
+This:
+- removes file from staging area
+- keeps the actual file unchanged
+- does NOT delete the file
