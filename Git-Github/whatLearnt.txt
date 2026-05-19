@@ -106,3 +106,12 @@ This:
 Here, rm means remove, r means recursive, f means force (Deletes without asking for confirmation)
 
 16. git reset hash_id => restore the commit to that ID
+
+17. git stash => It temporarily hides your changes and cleans your working directory.
+
+18. git stash pop =>
+It will:
+- restore all your hidden changes
+- bring back modified/deleted files
+- remove the stash entry
+This means all the people who are backstage comes to staging area.
