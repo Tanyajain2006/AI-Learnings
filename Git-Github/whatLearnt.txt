@@ -99,3 +99,10 @@ This:
 - removes file from staging area
 - keeps the actual file unchanged
 - does NOT delete the file
+
+14. git log => displays entre history
+
+15. rm -rf names.txt
+Here, rm means remove, r means recursive, f means force (Deletes without asking for confirmation)
+
+16. git reset hash_id => restore the commit to that ID
