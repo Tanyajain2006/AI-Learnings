@@ -213,3 +213,11 @@ it internally also did the same thing.
 
 ########################################
 There are 2 important concepts --> Merge Conflicts & Squash Conflicts
+
+1. SQUASH Conflicts
+
+Method 1 - Use reset, all the files above the hash_id will be unstaged and now, get them on a staging area & u can commit all in one go.
+
+Method 2 - 
+git rebase -i hash_id
+i here means interactive environment
