@@ -158,4 +158,5 @@ Step 3 --> create new branch for working
 git checkout -b "branch_name"
 means create a new branch and points head to that new branch
 
-// Now if do some other commits, some other changes, git wont allow me to create another PR, but rather it will go into commit section of previous PR
+// Now if do some other commits, some other changes, git wont allow me to create another PR, but rather it will go into commit section of previous PR. 
+So, this simply means that one branch == one PR
