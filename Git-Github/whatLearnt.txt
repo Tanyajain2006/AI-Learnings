@@ -115,3 +115,19 @@ It will:
 - bring back modified/deleted files
 - remove the stash entry
 This means all the people who are backstage comes to staging area.
+
+###########################################
+What is BRANCHING?
+
+Ans: A Branch in git is basically an independent line of development / hitory. It stores:
+- commit history
+- project timeline
+- current development state
+
+Use of branch is that whenever we create a new feauture or resolve a bug or whatever, we aways create a seperate branch. Because a project can have multiple people working on it. Sometimes the projct manager may no like your feature or your code contains errors, so if we directly commit on main branch. Other users also get affected. So, to prevent this we create seperate branch for every feature.
+
+19. git branch feature_name => create new branch with name as "feature_name"
+
+20. git checkout branch_name => basically means now our head pointer points to branch_name specified.
+
+HEAD => Head is just the pointer that says all the new commits that will be made will be added on head.
