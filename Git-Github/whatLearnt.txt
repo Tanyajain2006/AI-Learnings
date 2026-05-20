@@ -221,3 +221,10 @@ Method 1 - Use reset, all the files above the hash_id will be unstaged and now, 
 Method 2 - 
 git rebase -i hash_id
 i here means interactive environment
+
+2. MERGE Conflicts
+
+Let's say u made a change in a file maybe on line no 3 and someone else also made a change in line no 3.
+So, Git will get confused - should git take our changes or some other person's changes. And Therefore Git will ask u for help to keep which change.
+
+This is what merge conflict is
