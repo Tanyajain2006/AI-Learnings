@@ -160,3 +160,12 @@ means create a new branch and points head to that new branch
 
 // Now if do some other commits, some other changes, git wont allow me to create another PR, but rather it will go into commit section of previous PR. 
 So, this simply means that one branch == one PR
+
+
+IMPORTANT QUESTION
+Why do we run git push origin master after merging?
+Ans: 
+- When we run `git merge PR-creation`, the merge happens only in the local repository present on our laptop. 
+- Git combines the changes of the `PR-creation` branch into the local `master` branch, but GitHub still does not know anything about this merge because the remote repository and local repository are separate. 
+- Therefore, we run `git push origin master` to upload the updated local `master` branch to the remote GitHub repository. 
+- In short, `git merge` updates the project locally, while `git push` synchronizes those merged changes with GitHub so that both local and remote repositories stay updated.
