@@ -131,3 +131,29 @@ Use of branch is that whenever we create a new feauture or resolve a bug or what
 20. git checkout branch_name => basically means now our head pointer points to branch_name specified.
 
 HEAD => Head is just the pointer that says all the new commits that will be made will be added on head.
+
+21. git remote -v => This command shows the remote repositories connected to your local Git repo.
+
+###########################################
+
+What happens when we work on an existing project??
+Should anyone who doesn't have access to it directly, should they be allowed to make changes to the existing project directly?? --> Answer is NO
+Imagine how dangerous it can be
+Steps to make changes:-
+
+Step 1 --> Create a copy of project on our own account.
+We fork it in our own account.
+After forking, we see that instead of Project-X, it is noe become Tanyajain/Project-X
+No since this project-X is in your own account, u can do anything u want to do with it.
+
+Step 2 --> Clone
+** Remember anything within your account is denoted by origin **
+git clone own_repo_url
+
+
+From where u have forked the project, that is known as upstream url by convention.
+git remote add upstream original_repo_url
+
+Step 3 --> create new branch for working
+git checkout -b "branch_name"
+means create a new branch and points head to that new branch
