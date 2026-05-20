@@ -169,3 +169,34 @@ Ans:
 - Git combines the changes of the `PR-creation` branch into the local `master` branch, but GitHub still does not know anything about this merge because the remote repository and local repository are separate. 
 - Therefore, we run `git push origin master` to upload the updated local `master` branch to the remote GitHub repository. 
 - In short, `git merge` updates the project locally, while `git push` synchronizes those merged changes with GitHub so that both local and remote repositories stay updated.
+
+
+###########################################
+How to fetch upstream?
+Step 1 --> first go to main branch of your fork
+git checkout master
+
+Step 2 --> fetch all upstreams from original project repo
+git fetch --all --prune
+
+A. Here git fetch means:-
+- downloads latest changes from remote repositories
+- does NOT merge them into your current branch
+- only updates remote tracking information
+
+B. all means:-
+- fetches updates from ALL remotes
+- not just origin
+
+C. prune means:-
+- removes stale/deleted remote-tracking branches locally.
+
+Basically command means:- Fetch latest updates from all remotes and clean up deleted remote branch references
+
+Step 3 --> Reset the main branch of my origin with the mainbranch or upstream
+git reset --hard upstream/main
+It is a powerful command used to make your current local branch exactly match the main branch from the remote repository named upstream, while discarding all local changes and commits that differ from it.
+
+U can also do something like
+git pull origin main
+it internally also did the same thing
