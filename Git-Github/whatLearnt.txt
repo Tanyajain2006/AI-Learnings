@@ -126,6 +126,8 @@ Ans: A Branch in git is basically an independent line of development / hitory. I
 
 Use of branch is that whenever we create a new feauture or resolve a bug or whatever, we aways create a seperate branch. Because a project can have multiple people working on it. Sometimes the projct manager may no like your feature or your code contains errors, so if we directly commit on main branch. Other users also get affected. So, to prevent this we create seperate branch for every feature.
 
+( It is very important to note that a new branch is created from the head branch. So, whenever u create new branch, make sure the head is clean and up-to-date with commits. )
+
 19. git branch feature_name => create new branch with name as "feature_name"
 
 20. git checkout branch_name => basically means now our head pointer points to branch_name specified.
@@ -199,4 +201,7 @@ It is a powerful command used to make your current local branch exactly match th
 
 U can also do something like
 git pull origin main
-it internally also did the same thing
+it internally also did the same thing.
+
+########################################
+There are 2 important concepts --> Merge Conflicts & Squash Conflicts
