@@ -1,4 +1,4 @@
--- PRAGMA table_info('PlaylistTrack');
+-- PRAGMA table_info('Track');
 
 SELECT *
-FROM PlaylistTrack;
+FROM Track;
