@@ -1,9 +1,9 @@
 What is Git and what is GitHub?
 
-Imagine that u have an application or project folder and u want to collaborate it with people, or imagine that u have your application and u now uploaded some new code in your application (u added aew feature for example) and now your application breaks.
+Imagine that u have an application or project folder and u want to collaborate it with people, or imagine that u have your application and u now uploaded some new code in your application (u added a few feature for example) and now your application breaks.
 
 => So what Git does is (why we use it?)
-- it allows us to maintain the history of proect at a particular point of time, 
+- it allows us to maintain the history of project at a particular point of time, 
 - which person made which changes, 
 - and where in the project.
 
