@@ -62,6 +62,7 @@ Chinook Music Store Analytics System/
 │
 ├── requirements.txt
 └── README.md
+```
 
 ---
 
