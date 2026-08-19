@@ -1,5 +1,13 @@
-
 What I learnt:
+
+1. echo -> print info on console/terminal
+2. whoami -> useful when different accounts are running on same linux server
+3. id -> tells the user id, primary group id, and the groups we r part of
+4. id root -> prints the details of superuser (kind off administrator)
+5. id -un -> prints the username of current effective user
+
+.............. Starting from what is more required....................
+
 1) scp command --> Secure Copy Protocol
 to copy a file from one server to another.
 scp source_file_path destination_username@port_number:destination_file_path
@@ -13,3 +21,40 @@ There is another point which states that when we dont have access to another ser
 It is basically, when we login from one server, and using that server we login into another server.
 We can also use jumpserver / presserver.
 
+
+2) Prsent Working Directory
+pwd
+
+3) How to display name of current logged-in user?
+whoami
+
+4) How to check system date and time?
+date
+date +%D
+
+5) How to display files and directories present in current location?
+(A) ls --> lists all the files and folders present in the current directory
+(B) ls -l --> Lists in long format → permissions, owner, size, modification time, etc.
+(C) ls -lt --> Long format + sort by modification time, newest first
+(D) ls -ltr --> Long format + sort by modification time, oldest first
+(E) ls -lh --> Here, h means human readable
+(F) ls -a --> To show hidden files
+
+**Easiest way to remember**
+ls       → list
+-l       → long/details
+-t       → time
+-r       → reverse
+-a       → all (including hidden)
+
+6) How to clear the linux terminal?
+clear
+Shortcut: CTRL + L
+
+
+...................CREATING, DELETING, EDITING FILES..............................
+7) How to display content of a file on a terminal?
+cat <file>
+
+8) How to read a file and search for a word?
+less <file>
