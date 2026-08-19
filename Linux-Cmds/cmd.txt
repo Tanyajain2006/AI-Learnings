@@ -92,3 +92,13 @@ If we want to save the contents of the file, we do :wq and Enter
 Else we do :q and Enter
 
 nano --> is basically a modernized way where we get the help as well
+
+13) How to create a directory or folder in linux?
+mkdir dir_name
+
+14) How to delete a directory or folder a linux?
+rmdir dir_name
+rm -rf dir_name
+
+Here rm stands for remove, -r stands for recursively, f stands for force (Doesn't ask for confirmation and ignores nonexistent files. OR Proceed with removal even when certain permissions/warnings would otherwise interrupt it.).
+rm -rf = recursively and forcefully remove the directory and its contents.
