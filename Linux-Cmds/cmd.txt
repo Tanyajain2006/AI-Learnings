@@ -1,10 +1,15 @@
 
 What I learnt:
-1) scp command --> to copy a file from one server to another.
+1) scp command --> Secure Copy Protocol
+to copy a file from one server to another.
 scp source_file_path destination_username@port_number:destination_file_path
 
 If wanted to copy another folder, then
 scp -r source_file_path destination_username@port_number:destination_file_path
 
 Using scp -v == verbose mode. It shows detailed debugging information. Rest is same for this cmd as well.
+
+There is another point which states that when we dont have access to another server, we do jumpserver.
+It is basically, when we login from one server, and using that server we login into another server.
+We can also use jumpserver / presserver.
 
