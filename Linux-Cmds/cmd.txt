@@ -70,3 +70,15 @@ If we want to go to start, press Shift + P
 And if we r at the bottom and we want to search up the file, we'll do ?word_to_find
 
 To exit from this editor, we press q.
+
+9) How to view content of file page by page?
+more file
+To exit from this editor, again press q
+
+10) How to create a file in Linux?
+touch file_name
+
+11) How to delete a file in linux?
+rm file_path 
+
+if u r there in that directory, simply rm file_name.
