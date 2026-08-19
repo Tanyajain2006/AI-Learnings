@@ -102,3 +102,27 @@ rm -rf dir_name
 
 Here rm stands for remove, -r stands for recursively, f stands for force (Doesn't ask for confirmation and ignores nonexistent files. OR Proceed with removal even when certain permissions/warnings would otherwise interrupt it.).
 rm -rf = recursively and forcefully remove the directory and its contents.
+
+15) How to change path or move to another folder in Linux?
+cd /path/folder
+cd ..
+cd / --> goes to root directory
+
+16) Absolute vs Relative path
+Absolute Path --> starting from very start i.e, root directory
+Relative path --> path from the location where we r currently in.
+
+17) How to copy and paste a file from one folder to another in Linux
+cp <file> /destination_path
+
+Note: In Linux, . represents current folder
+
+18) How to copy content of a file to another file in Linux?
+cp fileA fileB
+
+19) How to cut paste a file from one folder to another in Linux?
+mv <file> /destination_path
+
+20) How to rename a file in Linux?
+mv fileA fileNewName
+
