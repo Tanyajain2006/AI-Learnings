@@ -58,3 +58,15 @@ cat <file>
 
 8) How to read a file and search for a word?
 less <file>
+It will open another editor, put forward slash and the word
+/word_to_find.
+The / means, it will start iterating from top to bottom from the point where we r currently right now.
+
+It will list the first line containing that word. When we press n, it will take me to the next line containig that word.
+
+If we want to go to bottom directly, we'll do Shift + G
+If we want to go to start, press Shift + P
+
+And if we r at the bottom and we want to search up the file, we'll do ?word_to_find
+
+To exit from this editor, we press q.
