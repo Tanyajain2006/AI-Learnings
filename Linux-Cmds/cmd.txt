@@ -82,3 +82,13 @@ touch file_name
 rm file_path 
 
 if u r there in that directory, simply rm file_name.
+
+12) How to edit a file in Linux? 
+vi fine_name --> Opens Vim editor
+nano file_name --> Opens nano editor
+
+In Vim, after typing this command, it will take us to an editor called Vim Editor. First we press i to start editing / inserting in the file. After done, we first press Escape.
+If we want to save the contents of the file, we do :wq and Enter
+Else we do :q and Enter
+
+nano --> is basically a modernized way where we get the help as well
