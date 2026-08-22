@@ -126,3 +126,19 @@ mv <file> /destination_path
 20) How to rename a file in Linux?
 mv fileA fileNewName
 
+.............. LINUX HEAD & TAIL COMMANDS....................
+21) How to read or display top 5 lines from a file in Linux?
+head -5 file_path
+
+22) How to read or display bottom 5 lines from a file in Linux?
+tail -5 file_path
+
+23) How to sort the content from a file in Linux?
+sort file_path --> in ascending order
+sort -r file_path --> in descending order (reverse)
+
+24) How to display unique content from a file in Linux?
+sort file | uniq
+
+25) A file has 9 lines. How to split this file in 3 different files in Linux?
+split -l 3 file_path
